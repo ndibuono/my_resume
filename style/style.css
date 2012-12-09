@@ -1,9 +1,12 @@
-/** General styling **/
+/** Style by element **/
 body { 
 	margin: 0; 
 	font-size: 13px; 
 	color: #222; 
 	font-family:'Bookman Old Style',Bookman,'URW Bookman L','Palatino Linotype',serif;
+}
+p {
+	padding-bottom: 5px;
 }
 
 /** Style by ID **/
@@ -17,11 +20,14 @@ body {
 .job-description {
 	padding-bottom: 10px;
 }
+.job-details {
+	padding-top: 12px;
+}
 
 /** Bootstrap overrides **/
 .dl-horizontal dt {
-  width: 100px; /*original:160*/
+  width: 100px;
 }
 .dl-horizontal dd {
-  margin-left: 120px;/*original:180*/
+  margin-left: 120px;
 }
