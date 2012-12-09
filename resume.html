@@ -5,66 +5,77 @@
 		<title>Resume</title>
 
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen">
+
+		<!-- Putting this after the Bootstrap CSS to override & personalize styles as needed -->
 		<link rel="stylesheet" href="style/style.css">
 
+		<!-- Development "quick-fix" styles only; either remove or integrate into style.css for production -->
 		<style type="text/css">
 			/*.row-fluid {border: solid 1px black;}*/
 			/*.content{border: solid 1px blue;}*/
-			#wrapper { 
-				-webkit-box-shadow: 0 0 0 0 transparent;
-    			-moz-box-shadow: 0 0 0 0 transparent;
-    			box-shadow: 0 0 0 0 transparent;
-			}
+						
 		</style>
 		
 
 	</head>
 	<body>
 		<script src="script/jquery-1.8.3.js"></script>
+		
+		<!-- Always comes after the jQuery source, since Bootstrap JS is reliant upon jQuery -->
 		<script src="bootstrap/js/bootstrap.js"></script>
 
 		<div id="container">
 			<div id="name" class="row-fluid">
 				<div class="span3 offset5 content">
-					<h2 class="offset1">Nick DiBuono</h2>
+					<h2 class="offset3">Nick DiBuono</h2>
 				</div>
 			</div>					
 			<div id="title" class="row-fluid">
 				<div class="span3 offset5 content">
-					<h3 class="offset1">Software Engineer</h3>
+					<h3 class="offset3">Software Engineer</h3>
 				</div>
 			</div>
 			<div id="contact-info" class="row-fluid">
-				<div class="span4 offset4 content">
+				<div class="span5 offset4 content">
 					<h5>Contact Info</h5>
-					<dl class="dl-horizontal">
-						<dt>email</dt>
-						<dd><a href="mailto:ndibuono@gmail.com">ndibuono@gmail.com</a></dd>
-						<dt>cell</dt>
-						<dd>814.659.3930</dd>
-					</dl>
+					<div class="row-fluid">
+						<dl class="dl-horizontal span6 content">
+							<dt>email</dt>
+							<dd><a href="mailto:ndibuono@gmail.com">ndibuono@gmail.com</a></dd>
+							<dt>cell</dt>
+							<dd>814.659.3930</dd>
+						</dl>
+						<dl class="dl-horizontal span6 content">
+							<dt>linked in</dt>
+							<dd><a href="www.linkedin.com/in/ndibuono">linkedin.com/in/ndibuono</a></dd>
+						</dl>
+					</div>
 				</div>
 			</div>
 			<div id="education-info" class="row-fluid">
-				<div class="span4 offset4 content">
+				<div class="span5 offset4 content">
 					<h5>Education</h5>
-					<dl class="dl-horizontal">
-						<dt>degree</dt>
-						<dd>Bachelor of Science, Computer Science</dd>
-						<dt>university</dt>
-						<dd>Indiana University of Pennsylvania</dd>
-						<dt>minors</dt>
-						<dd>Mathematics, Criminology</dd>
-						<dt>honors</dt>
-						<dd>Magna Cum Laude</dd>
-					</dl>
+					<div class="row-fluid">
+						<dl class="dl-horizontal span6 content">
+							<dt>degree</dt>
+							<dd>Bachelor of Science, Computer Science</dd>
+							<dt>university</dt>
+							<dd>Indiana University of Pennsylvania</dd>
+						</dl>
+						<dl class="dl-horizontal span6 content">
+							<dt>minors</dt>
+							<dd>Mathematics, Criminology</dd>
+							<dt>honors</dt>
+							<dd>Magna Cum Laude</dd>
+						</dl>
+					</div>
 				</div>
 			</div>
 			<div id="work-history" class="row-fluid">
-				<div class="span4 offset4 content">
+				<div class="span5 offset4 content">
 					<h5>Work History</h5>
-					<div id="job1">
-						<dl class="dl-horizontal">
+					<div id="job1" class="job-description row-fluid">
+						<dl class="dl-horizontal span6">
 							<dt>position</dt>
 							<dd>Software Engineer</dd>
 							<dt>employer</dt>
@@ -74,13 +85,13 @@
 							<dt>time</dt>
 							<dd>December 2007 - June 2012</dd>
 						</dl>
-						<div class="job-details">
+						<div class="job-details span6">
 							<p>As a Software Engineer at CTC, I gained experience with web/user interface development across various projects and application environments predominantly through the use of HTML, JavaScript, jQuery, CSS and Adobe Flex. I also had the opportunity to help develop business-tier applications using Java and ColdFusion. These application development efforts often required database development such as, creating SQL queries and stored procedures for Microsoft SQL Server and MySQL servers.</p>
 							<p>While at CTC I experienced various team environments and software development approaches. These ranged from teams of several experienced developers using an Agile development approach to smaller-scale projects with less structured development procedures.</p>
 						</div>
 					</div>
-					<div id="job2">
-						<dl class="dl-horizontal">
+					<div id="job2" class="job-description row-fluid">
+						<dl class="dl-horizontal span6">
 							<dt>position</dt>
 							<dd>Technical Intern</dd>
 							<dt>employer</dt>
@@ -90,12 +101,12 @@
 							<dt>time</dt>
 							<dd>May 2006 - December 2007</dd>
 						</dl>
-						<div class="job-details">
+						<div class="job-details span6">
 							<p>In my role as a Technical Intern with CTC, I assisted with basic web development and software testing. I was also tasked with creation and maintenance of various technical documents. In addition, I attended multiple peer code reviews as a participant and documenter to increase my knowledge of the software development process.</p>
 						</div>
 					</div>
-					<div id="job3">
-						<dl class="dl-horizontal">
+					<div id="job3" class="job-description row-fluid">
+						<dl class="dl-horizontal span6">
 							<dt>position</dt>
 							<dd>Student Consultant/Technician</dd>
 							<dt>employer</dt>
@@ -105,7 +116,7 @@
 							<dt>time</dt>
 							<dd>Februrary 2006 - May 2006</dd>
 						</dl>
-						<div class="job-details">
+						<div class="job-details span6">
 							<p>My duties as a student technician for the IUP Administrative Helpdesk included regular troubleshooting of hardware and software issues, as well as providing customer support to end users, typically via phone and email communication.</p>
 						</div>
 					</div>
